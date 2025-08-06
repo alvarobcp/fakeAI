@@ -6,9 +6,19 @@
   padding: 0;
 }
 
+html, body{
+  height: 100%;
+}
+
 body{
   font-family: 'Anonymous Pro', monospace;
+  display: flex;
+  flex-direction: column;
 
+}
+
+main{
+  flex: 1;
 }
 
 header {
@@ -16,6 +26,7 @@ header {
   margin-bottom: 30px;
   height: 25vh;
 }
+
 
 
 header img{
@@ -52,7 +63,7 @@ h2{
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin:50px 50px 0px 50px;
-  height: 65vh;
+  margin: 50px 50px 0px 50px;
 }
 
 
@@ -138,7 +149,7 @@ input[type="submit"]:hover{
 
   margin-left: 20px;
   margin-right: 20px;
-  height: 70%;
+  min-height: 500px;
   padding: 30px;
   border: solid #0A5B83 2px;
   border-radius: 10px;
@@ -150,7 +161,7 @@ input[type="submit"]:hover{
 
 footer{
   text-align: right;
-  padding-right: 70px;
+  padding: 20px 70px;
   
 }
 
