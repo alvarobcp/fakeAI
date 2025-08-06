@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lisper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+
+<main>
+<body>
+
+<header>
+  <div>
+    <img
+        src="https://api.dicebear.com/9.x/thumbs/svg?seed=Caleb"
+        alt="avatar" />
+  <h1>fakeAI</h1>
+  
+  </div>
+  
+</header>
+
+<div class="container">
+
+    <div class="question-area">
+        <div class="avatar-area">
+          <img class="avatar"
+        src="https://api.dicebear.com/9.x/thumbs/svg?seed=Destiny"
+        alt="avatar" />
+        <p>
+          Hello <%=name%>, ask me a question!
+        </p>
+    </div>
+
+    <div class="questions-list">
+    <form id="myForm" method="post">
+      <input id="get_info" type="submit" value="Who are you?" formaction="/info">
+      <input id="get_weather" type="submit" value="What are the weather conditions?" formaction="/weather">
+      <input id="get_location" type="submit" value="Where am I right now?" formaction="/location">
+      <input id="get_recipe" type="submit" value="Can you tell me a recipe?" formaction="/recipe">
+      <input id="get_drink" type="submit" value="What can I drink?" formaction="/drink">
+      <input id="get_recipe_spanish" type="submit" value="Can you tell me a Spanish recipe?" formaction="/recipe_spanish">
+      <input id="get_recipe_japanese" type="submit" value="Can you tell me a Japanese recipe?" formaction="/recipe_japanese">
+      <input id="get_recipe_dessert" type="submit" value="What kind of dessert I can cook?" formaction="/recipe_dessert">
+      <input id="get_drink_gin" type="submit" value="I want gin, any idea?" formaction="/drink_gin">
+      <input id="get_name" type="submit" value="Who am I?" formaction="/name">
+      <input id="get_joke" type="submit" value="Tell me a joke." formaction="/joke">
+      <input id="get_dark_joke" type="submit" value="Tell me a dark joke." formaction="/dark_joke">
+      <input id="get_pikachu" type="submit" value="I want to know all the Pikachu movements." formaction="/pikachu">
+      <input id="get_best" type="submit" value="Who is the best?" formaction="/best">
+      <input id="get_advice" type="submit" value="Can you give me a piece of advise?" formaction="/advice">
+      
+    </form>
+    </div>
+    
+
+  </div>
+
+  <div class="answer-area">
+    <div class="answer">
+      <h3><%=title%></h3>
+      <p class="answer-p type"><%=answer%></p>
+    </div>
+    
+  </div>
+
+</div>
+</main>
+<footer>
+  <div>
+      <p>Developed by Álvaro Delgado to practise with external APIs.</p>
+  </div>
+
+</footer>
+
+</body>
+
+
+</html>
